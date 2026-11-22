@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Создаю магазины под ключ</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',Arial,sans-serif; }
+  body { background:#0f1117; color:#eee; line-height:1.6; }
+  .hero { text-align:center; padding:80px 20px 40px; background:linear-gradient(135deg,#1a1d29,#2b1e4d); }
+  .hero h1 { font-size:2.4em; margin-bottom:12px; }
+  .hero p { color:#aaa; font-size:1.2em; }
+  .btn { display:inline-block; margin-top:24px; padding:14px 36px; background:#7c5cff; color:#fff;
+         border-radius:30px; text-decoration:none; font-weight:600; transition:.2s; }
+  .btn:hover { background:#9d82ff; transform:translateY(-2px); }
+  section { max-width:900px; margin:0 auto; padding:50px 20px; }
+  h2 { text-align:center; margin-bottom:30px; font-size:1.8em; }
+  .steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
+  .card { background:#1a1d29; border-radius:14px; padding:24px; border:1px solid #2c2f40; }
+  .card h3 { color:#7c5cff; margin-bottom:10px; }
+  .stats { display:flex; justify-content:center; gap:40px; flex-wrap:wrap; text-align:center; }
+  .stats div strong { font-size:2em; display:block; color:#7c5cff; }
+  .contacts { text-align:center; background:#1a1d29; border-radius:14px; padding:40px; }
+  footer { text-align:center; padding:20px; color:#555; font-size:.9em; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Создаю интернет-магазины под ключ</h1>
+  <p>От идеи до первых продаж — за 2–3 недели</p>
+  <a href="#contact" class="btn">Обсудить проект</a>
+</div>
+
+<section>
+  <h2>Как я работаю</h2>
+  <div class="steps">
+    <div class="card"><h3>1. Бриф</h3><p>Разбираем нишу, товар и цели. Вы получаете план и смету до старта.</p></div>
+    <div class="card"><h3>2. Дизайн и сборка</h3><p>Прототип, дизайн, наполнение каталогом. Вы видите процесс на каждом этапе.</p></div>
+    <div class="card"><h3>3. Запуск</h3><p>Подключаем оплату, доставку и аналитику. Обучаю вас управлять магазином.</p></div>
+    <div class="card"><h3>4. Поддержка</h3><p>Первый месяц — на связи, помогаю с правками и вопросами.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Реальные цифры</h2>
+  <div class="stats">
+    <div><strong id="counter">0</strong><span>магазинов запущено</span></div>
+    <div><strong>14 дней</strong><span>средний срок запуска</span></div>
+    <div><strong>100%</strong><span>клиентов получили работающий магазин</span></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contacts">
+    <h2>Связаться со мной</h2>
+    <p>Напишите — отвечу в течение
+ часа:<br><br>
+Telegram: <a href="https://t.me/Trader_Forex_999">@Trader_Forex_999</a><br>
+Почта: <a href="mailto:Kurban111117@yandex.ru">Kurban111117@yandex.ru</a></p>ss
+
+    📱  </div>
+</section>
+
+<footer>© 2026 Ваше имя</footer>
+
+<script>
+  // Счётчик считает от 0 до реального числа — впишите своё значение
+  const realCount = 12; // ← честное число выполненных проектов
+  let n = 0;
+  const el = document.getElementById('counter');
+  const t = setInterval(() => {
+    n++;
+    el.textContent = n;
+    if (n >= realCount) clearInterval(t);
+  }, 60);
+</script>
+
+</body>
+</html>
